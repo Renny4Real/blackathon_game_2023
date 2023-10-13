@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#host li {
+  list-style-type: none;
+}
+
+#answers li.correct {
+  background-color: green;
+}
+
+#answers li.incorrect {
+  background-color: red;
+}
+
+#clue li.selected {
+  background-color: blue;
+  color: white;
+}

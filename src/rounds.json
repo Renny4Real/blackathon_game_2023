@@ -1,0 +1,39 @@
+[
+  {
+    "clues": [
+      {
+        "description": "Job",
+        "clue": "Worked as a Nurse"
+      },
+      {
+        "description": "Where they lived",
+        "clue": "Lived in New York"
+      },
+      {
+        "description": "Husbands name",
+        "clue": "Married to Albert Brown"
+      },
+      {
+        "description": "Year of creation",
+        "clue": "Patented in 1969"
+      }
+    ],
+    "answers": [
+        {
+            "answer": "Stock cubes",
+            "correct": false
+        },
+        {
+            "answer": "CCTV",
+            "correct": true
+        },
+        {
+            "answer": "Satellites",
+            "correct": false
+        }
+        
+    ],
+    "question": "What did Marie Van Brittan create the first prototype for?",
+    "name": "Marie Van Brittan Brown"
+  }
+]

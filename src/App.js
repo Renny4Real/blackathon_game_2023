@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Join } from "./Join";
+import { useState } from "react";
+import { Host } from "./Host";
+import { Player } from "./Player";
+import rounds from "./rounds.json";
+
+function ConditionalRender(state, setState){
+  switch (state.GameState) {
+    case "Joining":
+      return <Join state={state} setState={setState} />
+    case "Playing host":
+      return <Host state={state} setState={setState}/>
+    case "Playing player":
+      return <Player state={state} setState={setState}/>
+  }
+}
 
 function App() {
+  const [state, setState] = useState({ GameState: "Joining", rounds, currentRoundId: 0 });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {ConditionalRender(state, setState)}
     </div>
   );
 }
