@@ -8,13 +8,16 @@ export function Host({ state, setState }) {
   return (
     <div id="host">
       <h1>YOU ARE THE HOST!!!</h1>
-      <p>{`Help everyone guess what ${currentRound.name} is famous for`}</p>
+      <h2>{`Help everyone guess what ${currentRound.name} is famous for`}</h2>
       <img src={`/person-${state.currentRoundId}.jpg`} width="100%" />
-      <ul id="clue">
+      <div id="clue">
         {currentRound.clues.map((data) => (
           <Clue data={data} />
         ))}
-      </ul>
+      </div>
+      <br />
+      <br />
+      <button onClick={() => setState({ ...state, GameState: "End Round" })}>End Round</button>
     </div>
   );
 }

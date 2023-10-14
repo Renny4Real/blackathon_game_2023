@@ -7,7 +7,7 @@ export function Answer({ data, onClick, enabled }) {
     if (chosen) {
       return data.correct ? "correct" : "incorrect";
     }
-    return "";
+    return "notSelected";
   };
 
   const clickHandler = () => {
@@ -18,8 +18,11 @@ export function Answer({ data, onClick, enabled }) {
   };
 
   return (
-    <li onClick={clickHandler} className={buttonClass()}>
-      {data.answer}
-    </li>
+    <>
+      <button onClick={clickHandler} className={buttonClass()} disabled={chosen}>
+        {data.answer}
+      </button>
+      <br />
+    </>
   );
 }

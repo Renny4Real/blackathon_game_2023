@@ -12,16 +12,13 @@ export function Clue({ data }) {
     }
   };
 
-  // const clickHandler = () => {
-  //   if (enabled) {
-  //     setChosen(true);
-  //     onClick();
-  //   }
-  // };
-
   return (
-    <li onClick={() => {setRevealed(true); setChosen(true)}} className={hintClass()}>
-      {revealed ? data.clue : data.description}
-    </li>
+    <>
+      <button onClick={() => {setRevealed(true); setChosen(true)}} className={hintClass()} disabled={chosen}>
+        {revealed ? data.clue : data.description}
+      </button>
+      <br />
+    </>
+    
   );
 }

@@ -16,15 +16,82 @@ code {
   list-style-type: none;
 }
 
-#answers li.correct {
+#join button {
+  height:50px;
+  width:100px;
+  margin-right: 10px;
+}
+
+#answers button.correct {
   background-color: green;
+  height:50px;
+  width:100px;
+  margin-bottom: 10px;
+  color: white;
 }
 
-#answers li.incorrect {
+#answers button.incorrect {
   background-color: red;
+  height:50px;
+  width:100px;
+  margin-bottom: 10px;
+  color: white;
 }
 
-#clue li.selected {
+#answers button.notSelected {
+  height:50px;
+  width:100px;
+  margin-bottom: 10px;
+}
+
+#clue button.selected {
+  height:50px;
+  width:100px;
+  margin-bottom: 10px;
   background-color: blue;
   color: white;
+}
+
+#clue button.notSelected {
+  height:50px;
+  width:100px;
+  margin-bottom: 10px;
+}
+
+#Welcome img {
+  background-repeat: repeat-y;
+}
+
+#scores table, th, td {
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#scores div {
+  overflow: hidden;
+  position: relative;
+}
+
+#scores img {
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+#scores img {
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+#scores table {
+  position: relative;
 }
