@@ -1,9 +1,10 @@
 import { React, useState } from "react";
 
 export function Scores({ state, setState }) {
-  // const currentRound = state.rounds[state.currentRoundId];
+  const nextRound = state.currentRoundId + 1;
 
   return (
+    <>
     <div id="scores">
     <img src={`/app-background.png`} width="100%" />
       <h1>{`ROUND ${state.currentRoundId + 1}`}</h1>
@@ -26,7 +27,10 @@ export function Scores({ state, setState }) {
           </tr>
         </table>
       <br />
-      <button>Next Round</button>
       </div>
+    <button onClick={() => setState({ ...state, GameState: "Joining", currentRoundId: nextRound })}>Next Round</button>
+    <img src={`/app-background.png`} width="100%" />
+    </>
+    
   );
 }

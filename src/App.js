@@ -18,15 +18,17 @@ function ConditionalRender(state, setState){
       return <Host state={state} setState={setState}/>
     case "Playing player":
       return <Player state={state} setState={setState}/>
-    case "Show scores":
-      return <Scores state={state} setState={setState}/>
     case "End Round":
       return <Bio state={state} setState={setState}/>
+    case "Show scores":
+      return <Scores state={state} setState={setState}/>
   }
 }
 
 function App() {
   const [state, setState] = useState({ GameState: "Welcome", rounds, currentRoundId: 0 });
+  console.log("current id " + state.currentRoundId )
+  console.log("state: ", state )
 
   return (
     <div className="App">

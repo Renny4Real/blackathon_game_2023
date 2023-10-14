@@ -36,5 +36,43 @@
     "question": "What did Marie Van Brittan create the first prototype for?",
     "name": "Marie Van Brittan Brown",
     "bio": "Marie Van Brittan Brown was a Nurse and Inventor who created the first home based security system to keep her family safe. It became the basis for all modern CCTV."
+  },
+  {
+    "clues": [
+      {
+        "description": "Where they studied",
+        "clue": "Studied at University of Edinburgh"
+      },
+      {
+        "description": "Notable student",
+        "clue": "Charles Darwin"
+      },
+      {
+        "description": "Place of birth",
+        "clue": "Born in present-day Guyana"
+      },
+      {
+        "description": "Employer",
+        "clue": "Worked at The Royal Museum"
+      }
+    ],
+    "answers": [
+        {
+            "answer": "Taxidermy",
+            "correct": true
+        },
+        {
+            "answer": "Cartography",
+            "correct": false
+        },
+        {
+            "answer": "Viola",
+            "correct": false
+        }
+        
+    ],
+    "question": "Help everyone guess what John Edmonstone is famous for?",
+    "name": "John Edmonstone",
+    "bio": "John was born into slavery and became a taxidermist, business owner and teacher. He taught Charles Darwin, who used his methods to study finches which underpinned Darwin's evolutionary theory."
   }
 ]
